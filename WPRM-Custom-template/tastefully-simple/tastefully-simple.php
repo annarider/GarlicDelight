@@ -18,9 +18,6 @@
 	<meta itemprop="datePublished" content="<?php echo $recipe->date(); ?>" />
 	<meta itemprop="image" content="<?php echo $recipe->image_url( 'vertical-thumbnail' ); ?>" />
 	<!-- Beginning section -->
-	<div class="wprm-recipe-name wprm-color-header" itemprop="name"><?php echo $recipe->name(); ?>
-		<p>Using the new templates!!!</p>
-	</div>
 	<div class="wprm-recipe-image-container">
 		<!-- Full Main Image -->
 		<div class="wprm-recipe-image"><?php echo WPRM_Template_Helper::recipe_image( $recipe, 'vertical-thumbnail' ); ?></div>
@@ -98,6 +95,9 @@
 	<div class="wprm-recipe-buttons">
 		<?php echo $recipe->rating_stars( true ); ?>
 	</div>
+	<!-- Recipe title -->
+	<div class="wprm-recipe-name wprm-color-header" itemprop="name"><?php echo $recipe->name(); ?>
+	</div>
 
 	<!-- Ingredients Section -->
 	<?php
@@ -124,9 +124,10 @@
 					<?php if ( $ingredient['unit'] ) : ?>
 					<span class="wprm-recipe-ingredient-unit"><?php echo $ingredient['unit']; ?></span>
 					<?php endif; // Ingredient unit. ?>
-					<span class="wprm-recipe-ingredient-name"><?php echo WPRM_Template_Helper::ingredient_name( $ingredient, true ); ?></span>
+					<span class="wprm-recipe-ingredient-name"><?php echo WPRM_Template_Helper::ingredient_name( $ingredient, true ); ?></span> <br>
+					<!-- New line Ingredients notes -->
 					<?php if ( $ingredient['notes'] ) : ?>
-					<span class="wprm-recipe-ingredient-notes"><?php echo $ingredient['notes']; ?></span>
+					<span class="wprm-recipe-ingredient-notes">(<?php echo $ingredient['notes']; ?>)</span>
 					<?php endif; // Ingredient notes. ?>
 				</li>
 				<?php endforeach; // Ingredients. ?>
@@ -180,6 +181,7 @@
 		<div class="wprm-recipe-header wprm-color-header"><?php echo WPRM_Template_Helper::label( 'nutrition' ); ?></div>
 		<?php echo WPRM_Template_Helper::nutrition_label( $recipe->id() ); ?>
 	<?php endif; // Nutrition ?>
+	</div>
 
 	<!-- Print button -->
 	<div class="wprm-recipe-buttons">

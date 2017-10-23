@@ -64,8 +64,10 @@
 		}
 	}
 
-	.wprm-nutrition-label-container {
+
+	.wprm-nutrition-label {
 		text-align: left;
+		border: 1px solid #ccc;
 	}
 }
 
@@ -133,6 +135,7 @@
 		color: #fff;
 		display: inline-block;
 		font-family: "Handlee";
+		margin-top: 1em;
 	}
 
 	.wprm-recipe-image-container {
@@ -164,6 +167,7 @@
 	    		color: #fff;
 	    		display: inline-block;
 	    		font-family: "Handlee";
+	    		margin-top: 1em;
 			}
 		}
 	}
@@ -215,7 +219,7 @@
 	.wprm-recipe-details-container,
 	.wprm-recipe-ingredients-container {
 		margin-bottom: 10px;
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 
 	.wprm-recipe-header {
@@ -266,8 +270,9 @@
 		}
 	}
 
-	.wprm-nutrition-label-container {
+	.wprm-nutrition-label {
 		text-align: left;
+		border: 1px solid #ccc;
 	}
 }
 
