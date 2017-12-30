@@ -1080,12 +1080,10 @@ Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 
-/*
-Plug-Ins
+/* Plug-Ins
 ---------------------------------------------------------------------------------------------------- */
 
-/* Contact Form 7
---------------*/
+/*--- Contact Form 7 ---*/
 
 /* 20171019 - AL: Contact Form 7 Styles */
 input.wpcf7-form-control.wpcf7-submit {
@@ -1093,7 +1091,56 @@ input.wpcf7-form-control.wpcf7-submit {
   border: #81ae40;
   color: #ffffff;
   font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+
 }
+
+/*--- WordPress Recipe Maker ---*/
+/* 20171019 - AL: WPRM heading */
+.wprm-recipe-name {
+    font-family: 'Handlee' !important;
+    font-size: 2.2em !important;
+}
+
+/* 20171019 - AL: WPRM Jump & Print snippets */
+.wprm-recipe-snippets {
+  text-align: center;
+  margin-bottom: 2em;
+  color: #fff;
+} 
+
+.wprm-recipe-snippets a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #81ae40;
+  color: #fff;
+  font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* 20171229 - AL: WPRM Jump & Print snippets link button in white */
+.entry-content .wprm-recipe-snippets a {
+    color: #fff;
+}
+
+/* 20171229 - AL: From Brecht to fix different summary text styles */
+.wprm-recipe-summary, .wprm-recipe-summary p {
+    font-size: 1em !important;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+.wprm-recipe-instruction, .wprm-recipe-instruction p {
+    font-size: 1em !important;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+
+/*--- WP Ultimate Post Grid ---*/
+
+/* 20171019 - AL: WP Ultimate Post Grid search bar */
+.wpupg-container {
+  border-color: #ddd;
+}
+
 
 /* Featured Page and Featured Post
 --------------------------------------------- */
