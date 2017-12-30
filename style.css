@@ -38,11 +38,7 @@
 		- Featured Page and Featured Post
 		- User Profile
 	- Plugins
-		- Genesis eNews Extended
-		- Gravity Forms
-        - Instagram
-		- WooCommerce
-		- Simple Social Icons
+		- 
 	- Custom Page Templates
 		- Home Page
 		- Recipes Page
@@ -66,6 +62,8 @@
 		- max-width: 1139px
 		- max-width: 1023px
 		- max-width: 767px
+	* Custom Additions 2017-12-29
+	- Google Material Design Icons
 
 */
 
@@ -390,7 +388,7 @@ body {
 	background: #fff;
 	color: #4d4d4e;
 	font-family: Raleway, Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 1em;
 	font-weight: 300;
 	letter-spacing: 0.5px;
 	line-height: 1.8;
@@ -408,17 +406,17 @@ textarea:focus {
 }
 
 ::-moz-selection {
-	background: #111;
+	background: #81ae40;
 	color: #fff;
 }
 
 ::selection {
-	background: #111;
+	background: #81ae40;
 	color: #fff;
 }
 
 a {
-	color: #fb6a4a;
+	color: #81ae40;
 	text-decoration: none;
 }
 
@@ -463,7 +461,7 @@ ul {
 
 blockquote,
 blockquote::before {
-	color: #999;
+	color: #ccc;
 	font-size: 17px;
 }
 
@@ -483,8 +481,8 @@ blockquote::before {
 }
 
 pre {
-	background: #efefef;
-	color: #010101;
+	background: #eee;
+	color: #eee;
 	margin-bottom: 37px;
 	overflow: scroll;
 	padding: 37px;
@@ -505,7 +503,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Handlee", Arial, Helvetica, sans-serif;
+	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	letter-spacing: 3px;
 	line-height: 1.3;
@@ -514,7 +512,7 @@ h6 {
 }
 
 h1 {
-	font-size: 21px;
+	font-size: 2.5em;
 }
 
 h1 a {
@@ -522,23 +520,23 @@ h1 a {
 }
 
 h2 {
-	font-size: 19px;
+	font-size: 2.1em;
 }
 
 h3 {
-	font-size: 17px;
+	font-size: 1.7em;
 }
 
 h4 {
-	font-size: 15px;
+	font-size: 1.5em;
 }
 
 h5 {
-	font-size: 13px;
+	font-size: 1.3em;
 }
 
 h6 {
-	font-size: 11px;
+	font-size: 1.1em;
 }
 
 
@@ -632,8 +630,8 @@ textarea {
 	-webkit-box-shadow: 0 0 0 #fff;
 	-webkit-box-shadow: 0 0 0 #fff;
 	box-shadow: 0 0 0 #fff;
-	color: #999;
-	font-size: 11px;
+	color: #eee;
+	font-size: 1em;
 	font-weight: 300;
 	letter-spacing: 0.5px;
 	padding: 10px;
@@ -663,14 +661,14 @@ input[type="submit"],
 .more-from-category a,
 .sidebar .button,
 .sidebar .more-from-category a {
-	background: #010101;
-	border: 1px solid #010101;
+	background: #81ae40;
+	border: 1px solid #81ae40;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	color: #fff;
 	cursor: pointer;
-	font-family: "Handlee", Arial, Helvetica, sans-serif;
-	font-size: 11px;
+	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+	font-size: 1em;
 	font-style: normal;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -695,18 +693,19 @@ input:focus[type="reset"],
 input:hover[type="submit"],
 input:focus[type="submit"],
 .more-from-category a:hover {
-	background: #fff;
+	background: #ADCF7F;
 	color: #010101;
+	font-decoration: underline;
 }
 
 .button-secondary {
-	background: #f7f9fc;
-	color: #010101;
+	background: #db3429;
+	color: #fff;
 }
 
 .button-secondary:hover,
 .button-secondary:focus {
-	background: #010101;
+	background: #ae271e;
 	color: #fff;
 }
 
@@ -897,6 +896,7 @@ Common Classes
 	background-size: contain;
 	border: 0;
 	padding: 0;
+	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
 }
 
 .search-form input[type="submit"] {
@@ -1080,6 +1080,21 @@ Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 
+/*
+Plug-Ins
+---------------------------------------------------------------------------------------------------- */
+
+/* Contact Form 7
+--------------*/
+
+/* 20171019 - AL: Contact Form 7 Styles */
+input.wpcf7-form-control.wpcf7-submit {
+  background: #81ae40;
+  border: #81ae40;
+  color: #ffffff;
+  font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+}
+
 /* Featured Page and Featured Post
 --------------------------------------------- */
 
@@ -1107,8 +1122,8 @@ Widgets
 }
 
 .sidebar .featured-content .entry-title {
-	font-family: "Handlee", Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+	font-size: 1em;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 	text-transform: none;
@@ -1134,325 +1149,6 @@ Widgets
 
 
 /*
-Plugins
----------------------------------------------------------------------------------------------------- */
-
-
-/* Genesis eNews Extended
---------------------------------------------- */
-
-.enews-widget {
-	background: #f7f9fc;
-	color: #010101;
-	padding: 17px;
-	text-align: center;
-}
-
-.enews-widget input {
-	margin-bottom: 7px;
-	padding: 11px 17px;
-}
-
-.enews-widget input:focus {
-	border: 1px solid #ccc;
-}
-
-.enews-widget input[type="submit"] {
-	background: #010101;
-	color: #fff;
-	margin: 0;
-	width: 100%;
-}
-
-.enews-widget input:hover[type="submit"] {
-	background: #fff;
-	color: #010101;
-}
-
-.after-entry .enews-widget {
-	margin-bottom: 37px;
-}
-
-.before-header .enews-widget .widgettitle,
-.before-header .enews-widget p,
-.content .enews-widget .widgettitle,
-.content .enews-widget p {
-	display: inline;
-	float: left;
-	line-height: 37px;
-	margin: 0 7px 0 0;
-	width: auto;
-}
-
-.before-header .enews-widget .widgettitle,
-.content .enews-widget .widgettitle {
-	font-size: 17px;
-}
-
-.before-header .enews-widget form,
-.content .enews-widget form {
-	display: inline;
-	float: right;
-	width: auto;
-}
-
-.before-header .enews-widget input,
-.content .enews-widget input {
-	border: 0;
-	display: inline;
-	float: left;
-	margin: 0 7px 0 0;
-	width: auto;
-}
-
-.before-header .enews-widget input[type="submit"],
-.content .enews-widget input[type="submit"] {
-	display: inline;
-	float: right;
-	margin: 0;
-	width: auto;
-}
-
-
-/* Gravity Forms
---------------------------------------------- */
-
-div.gform_wrapper input[type="email"],
-div.gform_wrapper input[type="text"],
-div.gform_wrapper textarea,
-div.gform_wrapper .ginput_complex label {
-	font-size: 17px;
-	padding: 8px;
-}
-
-div.gform_wrapper .ginput_complex label {
-	padding: 0;
-}
-
-div.gform_wrapper li,
-div.gform_wrapper form li {
-	margin: 17px 0 0;
-}
-
-div.gform_wrapper .gform_footer input[type="submit"] {
-	font-size: 12px;
-}
-
-
-/* Instagram
---------------------------------------------- */
-
-.instagram-pics {
-	overflow: hidden;
-}
-
-.instagram-pics .widget-title {
-	margin-bottom: 20px;
-}
-
-.instagram-pics ul {
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.instagram-pics li {
-	float: left;
-	margin: 0;
-	width: 14.285714286%;
-}
-
-.instagram-pics img {
-	vertical-align: top;
-}
-
-
-/* Simple Social Icons
---------------------------------------------- */
-
-.simple-social-icons ul li:before {
-	content: none !important;
-	padding-right: 0 !important;
-}
-
-
-/* WooCommerce
---------------------------------------------- */
-
-.woocommerce #respond input#submit,
-.woocommerce a.button,
-.woocommerce button.button,
-.woocommerce input.button {
-	background-color: #fff !important;
-	border: 1px solid #010101 !important;
-	-webkit-border-radius: 0 !important;
-	border-radius: 0 !important;
-	color: #010101 !important;
-	cursor: pointer;
-	font-size: 11px !important;
-	font-weight: 300 !important;
-	letter-spacing: 2px !important;
-	padding: 17px 23px !important;
-	width: auto !important;
-}
-
-.woocommerce a.button {
-	margin-right: 10px !important;
-}
-
-.woocommerce #respond input#submit:hover,
-.woocommerce a.button:hover,
-.woocommerce button.button:hover,
-.woocommerce input.button:hover {
-	background-color: #010101 !important;
-	border-color: #010101 !important;
-	color: #fff !important;
-}
-
-.woocommerce div.product .woocommerce-tabs ul.tabs li a {
-	font-size: 10px;
-	font-weight: 300 !important;
-	letter-spacing: 2px;
-	text-transform: lowercase;
-}
-
-.woocommerce .woocommerce-message::before,
-.woocommerce .woocommerce-info::before,
-.woocommerce div.product p.price,
-.woocommerce div.product span.price,
-.woocommerce ul.products li.product .price,
-.woocommerce form .form-row .required {
-	color: #010101 !important;
-}
-
-.woocommerce .woocommerce-message,
-.woocommerce .woocommerce-info {
-	border-top-color: #010101 !important;
-}
-
-.woocommerce span.onsale {
-	background-color: #010101 !important;
-	font-size: 10px !important;
-	padding: 4px 7px !important;
-}
-
-.woocommerce-cart table.cart img {
-	width: 100px !important;
-}
-
-.woocommerce ul.cart_list li,
-.woocommerce ul.product_list_widget li,
-.woocommerce-page ul.cart_list li,
-.woocommerce-page ul.product_list_widget li {
-	float: left;
-	padding: 1% !important;
-	width: 33.3333%;
-}
-
-.sidebar .woocommerce ul.cart_list li,
-.sidebar .woocommerce ul.product_list_widget li,
-.sidebar .woocommerce-page ul.cart_list li,
-.sidebar .woocommerce-page ul.product_list_widget li {
-	float: left;
-	padding: 1% !important;
-	width: 50%;
-}
-
-.woocommerce.archive ul.products li.product,
-.woocommerce-page ul.products li.product {
-	text-align: center;
-}
-
-.woocommerce ul.cart_list li img,
-.woocommerce ul.product_list_widget li img {
-	width: 100% !important;
-}
-
-.woocommerce-checkout #payment ul.payment_methods li {
-	list-style: none;
-}
-
-.woocommerce-page input[type="checkbox"],
-.woocommerce-page input[type="radio"] {
-	width: auto;
-}
-
-.woocommerce ul.products li.product .price del,
-.woocommerce div.product p.price del,
-.woocommerce div.product span.price del {
-	display: inline !important;
-}
-
-.woocommerce .quantity .qty {
-	padding: 17px 0 !important;
-}
-
-.woocommerce-page table.cart td.actions .input-text {
-	width: 120px !important;
-}
-
-.woocommerce-cart table.cart td.actions .coupon .input-text {
-	padding: 15px 10px !important;
-	text-align: center;
-}
-
-.woocommerce-checkout #payment {
-	background-color: #f7f9fc !important;
-}
-
-.woocommerce .product-title {
-	font-size: 10px;
-	font-weight: 300;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-}
-
-.woocommerce form .form-row textarea {
-	height: 50px !important;
-}
-
-.woocommerce div.product .woocommerce-tabs {
-	display: block;
-	margin: 10px 0 !important;
-	padding: 0;
-}
-
-.product_meta,
-.product_meta a {
-	border: 0;
-	color: #bbb;
-	font-size: 9px;
-	font-weight: 300;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-
-.woocommerce .related {
-	clear: both;
-	display: block;
-}
-
-.foodie-pro .wcmenucart-contents {
-	color: #bbb;
-	font-size: 11px;
-	letter-spacing: 1px;
-	text-transform: lowercase;
-}
-
-.foodie-pro .woocommerce form.checkout_coupon,
-.foodie-pro .woocommerce form.login,
-.foodie-pro .woocommerce form.register {
-	background: #f7f9fc;
-	border: 0 solid #d3ced2;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	margin: 2em 0;
-	padding: 20px;
-	text-align: left;
-}
-
-
-/*
 Custom Page Templates
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1464,10 +1160,19 @@ Custom Page Templates
 	margin: 0 0 77px;
 }
 
+/* 20171018 - AL: front page styling  */
 .home-bottom .widgettitle {
 	border-bottom: 1px solid #eee;
 	margin: 37px 0 17px;
 	padding: 0 0 17px;
+	font-size: larger;
+  	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* 20171018 - AL: front page styling  */
+.home-top .widgettitle {
+  font-size: larger;
+  font-family: "Handlee";
 }
 
 .simple-grid .entry-title {
@@ -1486,7 +1191,12 @@ Custom Page Templates
 .more-from-category {
 	clear: both;
 }
+/* 20171019 - AL: front page widget "Gimme more..." button font  */
+p.more-from-category > a {
+  font-family: "Handlee";  
+  padding: 7px 17px;
 
+}
 
 /* Recipes Page
 --------------------------------------------- */
@@ -1660,7 +1370,7 @@ Site Navigation
 	border-bottom: 1px solid #eee;
 	border-top: 1px solid #eee;
 	clear: both;
-	font-family: "Handlee", Arial, Helvetica, sans-serif;
+	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
 	font-size: 0.001px;
 	font-weight: 400;
 	letter-spacing: 2px;
@@ -1801,6 +1511,20 @@ Site Navigation
 	text-decoration: none;
 }
 
+/* 20171019 - AL: Nav Search bar styling */
+#foodie-search {
+  font-family: "Handlee";
+  vertical-align: middle;
+}
+.foodie-search.menu-item {
+  font-size: 1.5em;
+}
+.search-form {
+  font-family: "Handlee";
+}
+.search-form input {
+  width: 15em;
+}
 
 /* Mobile Menu Toggle
 --------------------------------------------- */
@@ -1920,6 +1644,11 @@ Content Area
 .more-link {
 	display: table;
 	margin: 37px 0;
+}
+
+/* 20171018 - AL: button, style white text  */
+.entry-content a.more-link {
+  color: #fff;
 }
 
 
@@ -2641,4 +2370,67 @@ Media Queries
 	} 
 }
 
+/* 20171019 - AL: Material Design Icons https://materialdesignicons.com/bootstrap  */
+.mdi::before {
+    font-size: 1em;
+    line-height: 14px;
+}
+.btn .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.btn-xs .mdi::before {
+    font-size: 1em;
+    top: 3px;
+}
+.btn-sm .mdi::before {
+    font-size: 1em;
+    top: 3px;
+}
+.dropdown-menu .mdi {
+    width: 18px;
+}
+.dropdown-menu .mdi::before {
+    position: relative;
+    top: 4px;
+    left: -8px;
+}
+.nav .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.navbar .navbar-toggle .mdi::before {
+    position: relative;
+    top: 4px;
+    color: #FFF;
+}
+.breadcrumb .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+.breadcrumb a:hover span {
+    text-decoration: underline;
+}
+.alert .mdi::before {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+.input-group-addon .mdi::before {
+    position: relative;
+    top: 3px;
+}
+.navbar-brand .mdi::before {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+.list-group-item .mdi::before {
+    position: relative;
+    top: 3px;
+    left: -3px
+}
 
