@@ -63,6 +63,11 @@
 		<?php endif; // Author. ?>
 	</div>
 
+	<!-- 5 Star Rating -->
+	<div class="wprm-recipe-buttons">
+		<?php echo $recipe->rating_stars( true ); ?>
+	</div>
+
 
 	<!-- Recipe times -->
 	<?php if ( $recipe->prep_time() || $recipe->prep_time() || $recipe->prep_time() ) : ?>
@@ -91,10 +96,7 @@
 		<div class="wprm-clear-left">&nbsp;</div>
 	</div>
 	<?php endif; // Recipe times. ?>
-	<!-- 5 Star Rating -->
-	<div class="wprm-recipe-buttons">
-		<?php echo $recipe->rating_stars( true ); ?>
-	</div>
+
 	<!-- Recipe title -->
 	<div class="wprm-recipe-name wprm-color-header" itemprop="name"><?php echo $recipe->name(); ?>
 	</div>
