@@ -38,7 +38,10 @@
 		- Featured Page and Featured Post
 		- User Profile
 	- Plugins
-		- 
+		- Contact Form 7
+		- WP Recipe Maker
+		- WP Ultimate Grid
+		- Drip
 	- Custom Page Templates
 		- Home Page
 		- Recipes Page
@@ -237,6 +240,9 @@ textarea {
 	color: inherit;
 	font: inherit;
 	margin: 0;
+	border: none;
+    border-radius: 0px;
+}
 }
 
 button {
@@ -1178,6 +1184,31 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 
+/*--- Drip ---*/
+
+/* 20171102 - AL: Drip subscribe box - right sidebar  */
+input.subscribe-button {
+  background: #db3429;
+  border: #db3429;
+  color: #ffffff;
+  font-family: "Handlee";
+  padding: 10px 17px;
+  margin-top: 2em;
+}
+input.subscribe-button:hover {
+    background-color: #e9837c;
+}
+.widgettitle {
+  font-size: larger;
+  font-family: "Handlee";
+}
+
+/* 20171110 - AL: Drip subscribe box - input box  */
+.drip-input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Featured Page and Featured Post
 --------------------------------------------- */
 
@@ -1250,6 +1281,11 @@ Custom Page Templates
 	padding: 0 0 17px;
 	font-size: larger;
   	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* 20171019 - AL: front page reduce post title font size for non-full width widgets BROKEN */
+div.home-bottom > .entry-title > h2 > a {
+  font-size: 1em;
 }
 
 /* 20171018 - AL: front page styling  */
@@ -1454,7 +1490,6 @@ Site Navigation
 	border-top: 1px solid #eee;
 	clear: both;
 	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
-	font-size: 0.001px;
 	font-weight: 400;
 	letter-spacing: 2px;
 	line-height: 1;
@@ -1472,7 +1507,7 @@ Site Navigation
 
 .genesis-nav-menu .menu-item {
 	display: inline-block;
-	font-size: 12px;
+	font-size: .8em;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -1588,6 +1623,22 @@ Site Navigation
 	margin-left: 27px;
 	vertical-align: middle;
 	width: auto;
+}
+
+/* 20171115 - AL: Navbar social icons */
+ul.navbar-social-icons {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px .5em 0px .5em ;
+  overflow: hidden;
+}
+ul.navbar-social-icons li {
+  float: left;
+}
+.genesis-nav-menu .navbar-social-icons a {
+  padding: .25em;
+  font-size: 1.5em;
 }
 
 .sidebar .menu-item a {
@@ -1873,6 +1924,13 @@ div.pagination-next {
 }
 
 
+/* 20171114 - AL: Comment submit button */
+.comment-respond input#submit {
+border: none;
+border-radius: 0px;
+}
+
+
 /*
 Sidebars
 ---------------------------------------------------------------------------------------------------- */
@@ -1926,6 +1984,21 @@ Sidebars
 	margin-bottom: 0;
 }
 
+/* 20171114 - AL: Sidebar social icons */
+.sidebar-social-icons {
+  text-align: center;
+  font-size: 1.5em;
+  color: #81ae40;
+  letter-spacing: .5em;
+  margin-right: 1em; 
+  margin-left: 1em; 
+}
+.sidebar-social-icons {
+  text-align: center;
+  font-size: 1.5em;
+  color: #81ae40;
+  letter-spacing: .5em;
+}
 
 /*
 Footer Widgets
@@ -2020,6 +2093,7 @@ Site Footer
 
 .site-footer p {
 	margin: 0;
+	font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
 }
 
 
