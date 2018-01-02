@@ -126,6 +126,7 @@ function foodie_pro_register_image_sizes() {
     add_image_size( 'vertical-thumbnail', 680, 900, true );
     add_image_size( 'vertical-thumbnail-small', 340, 450, true );
     add_image_size( 'square-thumbnail', 320, 321, true );
+    add_image_size( 'illustration-thumbnail', 340, 514, true);
 }
 
 add_action( 'widgets_init', 'foodie_pro_register_widgets', 11 );
