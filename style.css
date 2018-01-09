@@ -1163,14 +1163,14 @@ input.wpcf7-form-control.wpcf7-submit {
     color: #fff;
 }
 
-/* 20171229 - AL: From Brecht to fix different summary text styles */
+/* 20171229 - AL: From Brecht to fix different summary text styles 
 .wprm-recipe-summary, .wprm-recipe-summary p {
-    font-size: 1.1em !important;
+    font-size: 1.3em !important;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-}
+}*/
 
 .wprm-recipe-instruction, .wprm-recipe-instruction p {
-    font-size: 1em !important;
+    font-size: 1.3em !important;
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
