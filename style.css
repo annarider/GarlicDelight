@@ -734,7 +734,7 @@ input.cta-button {
   background-color: #81ae40;
   border: 1px solid #81ae40;
   border-radius: 0px;
-  color: #fff;
+  color: #fff; !
   padding: 7px 17px;
   font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
 }
@@ -747,7 +747,7 @@ a.cta-button {
   background-color: #81ae40;
   border: 1px solid #81ae40;
   border-radius: 0px;
-  color: #fff;
+  color: #fff; !important;
   padding: 7px 17px;
   font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
 }
@@ -1135,6 +1135,12 @@ input.wpcf7-form-control.wpcf7-submit {
 
 }
 
+/* 20180115 - AL: Contact Form 7 input text color */
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+    background-color: #fff;
+    color: #4d4d4e;
+}
+
 /*--- WordPress Recipe Maker ---*/
 /* 20171019 - AL: WPRM heading */
 .wprm-recipe-name {
@@ -1167,13 +1173,13 @@ input.wpcf7-form-control.wpcf7-submit {
 .wprm-recipe-summary, .wprm-recipe-summary p {
     font-size: 1.3em !important;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-}*/
+}
 
 .wprm-recipe-instruction, .wprm-recipe-instruction p {
     font-size: 1.3em !important;
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
-
+*/
 
 
 /*--- WP Ultimate Post Grid ---*/
