@@ -1215,6 +1215,12 @@ input.subscribe-button:hover {
   padding-bottom: 10px;
 }
 
+/* 20180205 - AL: Drip subscribe box - input text color  */
+.drip-input input[type="text"], .drip-input input[type="email"], .drip-input textarea {
+    background-color: #fff;
+    color: #4d4d4e;
+}
+
 /* Featured Page and Featured Post
 --------------------------------------------- */
 
@@ -1789,6 +1795,12 @@ Content Area
   font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
 }
 
+
+/* 20180205 - AL: start here button, style white text  */
+a.more-link.start-here {
+  color: #fff;
+  font-family: Handlee, Raleway, Arial, Helvetica, sans-serif;
+}
 
 /* Archive Navigation
 --------------------------------------------- */
