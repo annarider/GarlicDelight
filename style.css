@@ -467,8 +467,9 @@ ul {
 
 blockquote,
 blockquote::before {
-	color: #ccc;
+	color: #4d4d4e;
 	font-size: 17px;
+	background-color: #fbfbfb
 }
 
 blockquote {
