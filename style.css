@@ -475,6 +475,7 @@ blockquote::before {
 blockquote {
 	margin: 0;
 	padding: 21px;
+	color: #4d4d4e;
 }
 
 blockquote::before {
