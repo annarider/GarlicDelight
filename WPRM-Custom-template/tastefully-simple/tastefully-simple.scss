@@ -1,8 +1,8 @@
 $font-stack-heading: Handlee, Raleway, Verdana, Arial, Geneva, sans-serif;
 $font-stack-text: Raleway, Verdana, Arial, Geneva, sans-serif;
-$primary-grey: #4d4d4e;
-$primary-red: #db3429;
-$primary-green: #81ae40;
+$primary-grey: #4d4d4d;
+$primary-red: #EC407A;
+$primary-green: #009688;
 $border-style: 1px solid #eee;
 
 .rtl .wprm-recipe-container .wprm-recipe-tastefully-simple,
@@ -136,7 +136,7 @@ $border-style: 1px solid #eee;
 	    font-family: $font-stack-heading;
 
     }
-    
+
     .wprm-recipe-print {
 		font-size: 1.5em;
 		cursor: pointer;
