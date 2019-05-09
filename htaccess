@@ -114,33 +114,7 @@ Header append Vary: Accept-Encoding
 
 # END WP Rocket
 
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} !^(www\.)?garlicdelight.com$ [NC]
-RewriteRule ^(.*)$ https://garlicdelight.com/$1 [R=301,L]
-#Options +FollowSymLinks
-#RewriteEngine On
-#RewriteBase /
-#RewriteCond %{HTTP_HOST} ^meltingpotluckmusings\.com$ [NC]
-#RewriteRule ^(.*)$ http://garlicdelight.com [R=301,L]
-# 20171121 AL: Force HTTPS: 301 Redirect 
-RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-# 20180719 AL: Force www to non-www direct
-#RewriteBase /
-#RewriteCond %{HTTP_HOST} !^www\. [NC]
-#RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-# 20180719 AL: Redirect /amp/ URLs back to original
-RedirectMatch 301 ^/amp/?$ https://%{HTTP_HOST}
-RewriteCond %{REQUEST_URI} /amp/?$
-RewriteRule ^(.*)/amp https://%{HTTP_HOST}/$1/ [L,R=301]
-# 2019-03-06 AR: Redirect to Garlic Delight
-#RewriteCond %{HTTP_HOST} ^meltingpotluckmusings.com$ [NC]
-#RewriteCond %{HTTP_HOST} ^www.meltingpotluckmusings.com$ [NC]
-#RewriteRule ^(.*)$ https://garlicdelight.com/$1 [R=301,L,NC]
-RewriteCond %{HTTP_HOST} !^garlicdelight.com$ [NC]
-RewriteRule ^(.*)$ https://garlicdelight.com/$1 [R=301,L]
+
 # BEGIN WordPress
 <IfModule mod_expires.c>
 	ExpiresActive On
@@ -165,6 +139,21 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+# 2019-03-14 AR: added for HTTPS, www, & rebrand
+## 20171121 AL: Force HTTPS: 301 Redirect
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+## 20180719 AL: Force www to non-www direct
+RewriteCond %{HTTP_HOST} !^www. [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L,NC]
+## 20180719 AL: Redirect /amp/ URLs back to original
+RedirectMatch 301 ^/amp/?$ https://%{HTTP_HOST}
+RewriteCond %{REQUEST_URI} /amp/?$
+RewriteRule ^(.*)/amp https://%{HTTP_HOST}/$1/ [L,R=301]
+## 2019-03-06 AR: Redirect to Garlic Delight
+RewriteCond %{HTTP_HOST} (meltingpotluckmusings.com)? [NC]
+RewriteCond %{HTTP_HOST} !^garlicdelight.com$ [NC]
+RewriteRule ^(.*)$ https://garlicdelight.com/$1 [R=301,L]
 </IfModule>
 # END WordPress
 # BEGIN ShortPixelWebp
