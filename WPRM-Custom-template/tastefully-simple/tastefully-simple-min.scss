@@ -1,0 +1,54 @@
+.rtl .wprm-recipe-container .wprm-recipe-tastefully-simple,
+.rtl .wprm-print .wprm-recipe-tastefully-simple {
+
+	.wprm-recipe-image-container {
+		margin-bottom: 1em;
+	}
+
+
+	.wprm-recipe-time-header {
+		font-size: 1em;
+	}
+
+	.wprm-recipe-time-container {
+		border-left: none;
+		border-right: 1px solid #eee;
+
+		&:first-child {
+			border-right: none;
+		}
+	}
+
+	.wprm-recipe-ingredients {
+		li {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+
+	.wprm-recipe-instructions {
+		li {
+			margin-left: 0;
+			margin-right: 30px;
+		}
+	}
+
+
+	.wprm-recipe-notes-container {
+		ul li {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+		ol li {
+			margin-left: 0;
+			margin-right: 30px;
+		}
+	}
+
+
+	.wprm-nutrition-label {
+		text-align: left;
+		border: 1px solid #ccc;
+	}
+}
+
