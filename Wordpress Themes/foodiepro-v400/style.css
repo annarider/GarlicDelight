@@ -2882,3 +2882,56 @@ Styling for how the related posts appear on website
 .crp_title:visited {
 	color: #fff;
 }
+
+/* 20190922 - AR - Pricing Table
+   (for Garlic Delight Meal Plan System)
+   https://riotcustoms.com/how-to-create-pricing-tables/
+--------------------------------------------- */
+.pricing-table {
+    color: #fff;
+}
+
+.pricing-table h3 {
+    text-align: center;
+}
+
+.pricing-table ul li {
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.pricing-table b {
+    text-align: center;
+}
+
+.pricing-table .one-half {
+    background-color: #B2DFDB;
+    padding: 20px;
+    border: 1px;
+}
+
+.pricing-table .one-half:nth-child(2n+1) {
+    margin: 0 auto;
+}
+
+.pricing-table .one-half:nth-child(2n+2) {
+    margin: 0;
+    background-color: #F06292;
+}
+
+.pricing-table .button:hover {
+    background: #fff;
+}
+
+.pricing-table input[type="image"] {
+    border: 0px none;
+    padding: 0px;
+    width: 200px;
+}
+
+@media only screen and (max-width: 800px){
+    .pricing-table .one-third:nth-child(2n+2) {
+	margin: 0;
+    padding-top: 10px;
+    }
+}
