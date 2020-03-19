@@ -3,7 +3,7 @@
  * Register customizer defaults.
  *
  * @package   FoodiePro\Functions\Customizer
- * @copyright Copyright (c) 2017, Feast Design Co.
+ * @copyright Copyright (c) 2020, Feast Design Co.
  * @license   GPL-2.0+
  * @since     3.0.0
  */
@@ -58,57 +58,6 @@ add_filter( 'feastco_customizer_get_google_fonts', 'foodie_pro_get_google_fonts'
  */
 function foodie_pro_get_google_fonts( $fonts ) {
 	$fonts = array(
-		'Abril Fatface' => array(
-			'label'    => 'Abril Fatface',
-			'variants' => array(
-				'regular',
-			),
-			'subsets' => array(
-				'latin',
-				'latin-ext',
-			),
-		),
-		'Adamina' => array(
-			'label'    => 'Adamina',
-			'variants' => array(
-				'regular',
-			),
-			'subsets' => array(
-				'latin',
-			),
-		),
-		'Coustard' => array(
-			'label'    => 'Coustard',
-			'variants' => array(
-				'regular',
-				'900',
-			),
-			'subsets' => array(
-				'latin',
-			),
-		),
-		'Cutive Mono' => array(
-			'label'    => 'Cutive Mono',
-			'variants' => array(
-				'regular',
-			),
-			'subsets' => array(
-				'latin',
-				'latin-ext',
-			),
-		),
-		'Droid Serif' => array(
-			'label'    => 'Droid Serif',
-			'variants' => array(
-				'regular',
-				'italic',
-				'700',
-				'700italic',
-			),
-			'subsets' => array(
-				'latin',
-			),
-		),
 		'Handlee' => array(
 			'label'    => 'Handlee',
 			'variants' => array(
@@ -118,20 +67,26 @@ function foodie_pro_get_google_fonts( $fonts ) {
 				'latin',
 			),
 		),
-		'Karla' => array(
-			'label'    => 'Karla',
-			'variants' => array(
-				'regular',
-				'italic',
-				'700',
-				'700italic',
-			),
-			'subsets' => array(
-				'latin',
-				'latin-ext',
-			),
-		),
-		'Lato' => array(
+        'Monserrat' => array(
+            'label'    => 'Montserrat',
+            'variants' => array(
+                '100',
+                '100italic',
+                '300',
+                '300italic',
+                'regular',
+                'italic',
+                '700',
+                '700italic',
+                '900',
+                '900italic',
+            ),
+            'subsets' => array(
+                    'latin',
+                    'latin-ext',
+            ),
+        ),
+    	'Lato' => array(
 			'label'    => 'Lato',
 			'variants' => array(
 				'100',
@@ -150,91 +105,34 @@ function foodie_pro_get_google_fonts( $fonts ) {
 				'latin-ext',
 			),
 		),
-		'Libre Baskerville' => array(
-			'label'    => 'Libre Baskerville',
-			'variants' => array(
-				'regular',
-				'italic',
-				'700',
-			),
-			'subsets' => array(
-				'latin',
-				'latin-ext',
-			),
-		),
-		'Muli' => array(
-			'label'    => 'Muli',
-			'variants' => array(
-				'300',
-				'300italic',
-				'regular',
-				'italic',
-			),
-			'subsets' => array(
-				'latin',
-			),
-		),
-		'Nunito' => array(
-			'label'    => 'Nunito',
-			'variants' => array(
-				'300',
-				'regular',
-				'700',
-			),
-			'subsets' => array(
-				'latin',
-			),
-		),
-		'Oswald' => array(
-			'label'    => 'Oswald',
-			'variants' => array(
-				'300',
-				'regular',
-				'700',
-			),
-			'subsets' => array(
-				'latin',
-				'latin-ext',
-			),
-		),
-		'Pontano Sans' => array(
-			'label'    => 'Pontano Sans',
-			'variants' => array(
-				'regular',
-			),
-			'subsets' => array(
-				'latin',
-				'latin-ext',
-			),
-		),
-		'PT Sans Narrow' => array(
-			'label'    => 'PT Sans Narrow',
-			'variants' => array(
-				'regular',
-				'700',
-			),
-			'subsets' => array(
-				'latin',
-				'cyrillic',
-				'latin-ext',
-				'cyrillic-ext',
-			),
-		),
-		'PT Serif' => array(
-			'label'    => 'PT Serif',
-			'variants' => array(
-				'regular',
-				'italic',
-				'700',
-				'700italic',
-			),
-			'subsets' => array(
-				'latin',
-				'cyrillic',
-				'latin-ext',
-				'cyrillic-ext',
-			),
-		),
+		'Montserrat Alternates' => array(
+            'label'    => 'Montserrat Alternates',
+            'variants' => array(
+                '100',
+                '100italic',
+                '300',
+                '300italic',
+                'regular',
+                'italic',
+                '700',
+                '700italic',
+                '900',
+                '900italic',
+            ),
+            'subsets' => array(
+                    'latin',
+                    'latin-ext',
+            ),
+        ),
+        'Paytone One' => array(
+                'label'    => 'Paytone One',
+                'variants' => array(
+                        'regular',
+                ),
+                'subsets' => array(
+                        'latin',
+                ),
+        ),
 		'Playfair Display' => array(
 			'label'    => 'Playfair Display',
 			'variants' => array(
@@ -249,15 +147,6 @@ function foodie_pro_get_google_fonts( $fonts ) {
 				'latin',
 				'cyrillic',
 				'latin-ext',
-			),
-		),
-		'Questrial' => array(
-			'label'    => 'Questrial',
-			'variants' => array(
-				'regular',
-			),
-			'subsets' => array(
-				'latin',
 			),
 		),
 		'Raleway' => array(
