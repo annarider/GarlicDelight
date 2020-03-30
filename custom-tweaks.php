@@ -24,24 +24,9 @@ Heart & other icons
 add_action( 'wp_enqueue_scripts', 'sp_enqueue_material_design_icons' );
 function sp_enqueue_material_design_icons() {
 
-    wp_enqueue_style( 'material_design', '//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css', array(), CHILD_THEME_VERSION );
+    wp_enqueue_style( 'material_design', '//fonts.googleapis.com/icon?family=Material+Icons', array(), CHILD_THEME_VERSION );
 
 }
-
-/* 20171019 - AL
-WPRM Jump to & Print codes
-*/
-function wprm_auto_add_snippets( $content ) {
- if ( is_singular( 'post' ) ) { // Only output on single posts, not in the archive.
- $print_shortcode = 'wprm-recipe-print';
- $jump_shortcode = 'wprm-recipe-jump';
-
- $snippets = '<div class="wprm-recipe-snippets">[' . $print_shortcode .'] [' . $jump_shortcode . ']</div>';
- $content = do_shortcode( $snippets ) . $content;
- }
- return $content;
-}
-add_filter( 'the_content', 'wprm_auto_add_snippets', 20 );
 
 /* 20190305 - AL
 Allow PSD to upload files to WordPress media library
